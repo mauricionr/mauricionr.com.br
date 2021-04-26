@@ -1,0 +1,10 @@
+name = "graphql"
+type = "webpack"
+account_id = "CF_ACCOUNT_ID"
+workers_dev = true
+webpack_config = "webpack.config.js"
+
+[env.production]
+workers_dev = false
+route = "https://mauricionr.com.br/graphql*"
+zone_id = "CF_ZONE_ID"

@@ -1,0 +1,23 @@
+# serverless.yml
+
+service:
+  name: mauricionr
+  config:
+    accountId: ""
+    zoneId: ""
+
+provider:
+  name: cloudflare
+
+plugins:
+  - serverless-cloudflare-workers
+
+functions:
+  index:
+    name: index
+    worker: index
+    script: index
+    events:
+      - http:
+          url: mauricionr.com.br
+          method: GET
