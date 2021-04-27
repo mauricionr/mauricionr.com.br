@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"publish": "wrangler publish"
+		"publish": "wrangler publish --env=production",
+    "build": "wrangler build"
   },
   "author": "",
   "license": "ISC"

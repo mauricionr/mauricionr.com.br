@@ -1,0 +1,12 @@
+name = "logs"
+type = "javascript"
+
+account_id = "CF_ACCOUNT_ID"
+workers_dev = true
+
+[env.production]
+workers_dev = false
+route = "mauricionr.com.br/logs*"
+kv_namespaces = [
+  { binding = "logs", id = "fcf8dd95056c4e938a5c1a482443a611" }
+]
