@@ -10,3 +10,5 @@ route = "mauricionr.com.br/logs*"
 kv_namespaces = [
   { binding = "logs", id = "fcf8dd95056c4e938a5c1a482443a611" }
 ]
+[triggers]
+crons = ["0 8 * * *"]

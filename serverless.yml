@@ -3,8 +3,8 @@
 service:
   name: mauricionr
   config:
-    accountId: ""
-    zoneId: ""
+    accountId: "4e988bf7025e2e3d0a368b674ab6de4f"
+    zoneId: "d4d1cee352e1e95bfb4ebda0e1284814"
 
 provider:
   name: cloudflare
@@ -14,9 +14,13 @@ plugins:
 
 functions:
   index:
-    name: index
+    name: index-production
     worker: index
     script: index
+    resources:
+      kv:
+        - variable: TODOS
+          namespace: TODOS
     events:
       - http:
           url: mauricionr.com.br

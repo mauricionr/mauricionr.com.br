@@ -6,7 +6,12 @@ addEventListener('fetch', event => {
  * @param {Request} request
  */
 async function handleRequest(request) {
-  return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
-  })
+  let url = new URL(request.url);
+  let init = {
+    method: request.method,
+    body: request.body,
+    headers: request.headers,
+  };
+  // await logs.put('slug', url.searchParams.get('slug'))
+  return fetch('https://mauricionr.com.br/', init)
 }
