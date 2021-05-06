@@ -6,5 +6,4 @@ webpack_config = "webpack.config.js"
 
 [env.production]
 workers_dev = false
-route = "https://mauricionr.com.br/graphql*"
-zone_id = "CF_ZONE_ID"
+route = "mauricionr.com.br/graphql*"

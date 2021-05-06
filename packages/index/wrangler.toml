@@ -6,5 +6,7 @@ site = { bucket = "./public" }
 
 [env.production]
 workers_dev = false
-route = "https://mauricionr.com.br/*"
-zone_id = "CF_ZONE_ID"
+route = "mauricionr.com.br*"
+kv_namespaces = [
+  { binding = "__index", id = "9b15b22a1a2f4f76a654a1ee1fbe558e", preview_id = "68a2bef264a942139b04d87c9d02d10a" }
+]
