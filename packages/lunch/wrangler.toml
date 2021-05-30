@@ -1,0 +1,11 @@
+name = "lunch"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.production]
+workers_dev = false
+route = "mauricionr.com.br/lunch*"
